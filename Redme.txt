@@ -1,0 +1,12 @@
+Propriedade do tailwind
+
+Breack point
+responsive Design
+    Adptação de interface
+    sm:
+    md:
+    lg:
+    xl:
+    2xl:
+
+

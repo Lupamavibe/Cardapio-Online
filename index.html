@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--https://apvarun.github.io/toastify-js/-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
+    
+    <link rel="stylesheet" href="./styles/output.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>Hamburgueria</title>
+</head>
+
+<body>
+  <!-- inicio Header -->
+  <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
+    <div class="w-full h-full flex flex-col justify-center items-center ">
+      <img 
+        src="./assets/hamb-1.png" 
+        alt="logo DevHambuguer"
+        class= "w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200 "
+      />
+      <h1 class="text-4xl mt-4 mb-2 font-bold text-white">Dev Burguer</h1>
+      <span class="text-white font-medium">Rua dos Dev, 4.1 -  Javascript - Brasil</span>
+      <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span" >
+        <span class="text-white font-medium">Seg à Dom - 18:00 as 22:00</span>
+      </div>
+    </div>
+  </header> 
+  <!-- FIM Header-->
+
+  <h2 class="text-2xl md:text-5xl font-bold text-center mt-9 mb-6">
+    Conheça o nosso Menu
+  </h2>
+
+  <!--Inicio do Menu do Cardápio-->
+  <div id="menu">
+    <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+
+      <!--Inicio - lista de produtos-->
+      <div class="flex gap-2">
+        <img 
+          src="./assets/hamb-1.png" 
+          alt="Hanmburguer Dev Smashe"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+        />
+        <div>
+          <p class="font-bold">Hanmburguer Dev Smashe</p>
+          <p class="text-sm">Nosso hambúrguer com bacon crocante, queijo cheddar derretido e molho especial em um pão macio. Um clássico com um toque defumado!</p>
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 18.90</p>
+            <button 
+              class=" bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="Hanmburguer Dev Smashe"
+              data-price="18.90"
+            >
+              <i class="fa-solid fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>     
+      </div>
+      <!--Fim - lista de produtos-->
+
+      <!--Inicio - lista de produtos-->
+      <div class="flex gap-2">
+        <img 
+          src="./assets/hamb-2.png" 
+          alt="Hanmburguer Dev Smashe Duplo"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+        />
+        <div>
+          <p class="font-bold">Hanmburguer Dev Smashe Duplo</p>
+          <p class="text-sm">Um hambúrguer clássico com queijo cheddar derretido, alface fresca e tomate em um pão macio. Simples, mas delicioso!</p>
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 37.90</p>
+            <button 
+              class=" bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="Hanmburguer Dev Smashe Duplo"
+              data-price="37.90"
+            >
+              <i class="fa-solid fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>     
+      </div>
+      <!--Fim - lista de produtos-->
+
+      <!--Inicio - lista de produtos-->
+      <div class="flex gap-2">
+        <img 
+          src="./assets/hamb-3.png" 
+          alt="Hanmburguer Dev Master"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+        />
+        <div>
+          <p class="font-bold">Hanmburguer Dev Master</p>
+          <p class="text-sm">Nosso hambúrguer de frango grelhado, com queijo cheddar derretido, alface fresca e molho especial em um pão macio. Uma opção mais leve e saborosa!</p>
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 43.90</p>
+            <button 
+              class=" bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="Hanmburguer Dev Master"
+              data-price="43.90"
+            >
+              <i class="fa-solid fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>     
+      </div>
+      <!--Fim - lista de produtos-->
+
+      <!--Inicio - lista de produtos-->
+      <div class="flex gap-2">
+        <img 
+          src="./assets/hamb-4.png" 
+          alt="Hanmburguer Dev Master Pro"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+        />
+        <div>
+          <p class="font-bold">Hanmburguer Dev Master Pro</p>
+          <p class="text-sm">Nosso hambúrguer de frango grelhado, com queijo cheddar derretido, alface fresca e molho especial em um pão macio. Uma opção mais leve e saborosa!</p>
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 83.90</p>
+            <button 
+              class=" bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="Hanmburguer Dev Master Pro"
+              data-price="83.90"
+            >
+              <i class="fa-solid fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>     
+      </div>
+      <!--Fim - lista de produtos-->
+
+      <!--Inicio - lista de produtos-->
+      <div class="flex gap-2">
+        <img 
+          src="./assets/hamb-5.png" 
+          alt="Hanmburguer Dev Master Pro Monster"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+        />
+        <div>
+          <p class="font-bold">Hanmburguer Dev Master Pro Monster</p>
+          <p class="text-sm">Dois hambúrgueres de carne bovina moída fresca, queijo cheddar derretido, alface fresca e molho especial em um pão macio. Para quem quer mais!</p>
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 103.90</p>
+            <button 
+              class=" bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="Hanmburguer Dev Master Pro Monster"
+              data-price="103.90"
+            >
+              <i class="fa-solid fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>     
+      </div>
+      <!--Fim - lista de produtos-->
+
+      <!--Inicio - lista de produtos-->
+      <div class="flex gap-2">
+        <img 
+          src="./assets/hamb-6.png" 
+          alt="Hanmburguer Dev Monster Duplo"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+        />
+        <div>
+          <p class="font-bold">Hanmburguer Dev Monster Duplo</p>
+          <p class="text-sm">Um hambúrguer clássico com um ovo frito por cima, queijo cheddar derretido e molho especial em um pão macio. Um toque de manhã no seu lanche!</p>
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 113.90</p>
+            <button 
+              class=" bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="Hanmburguer Dev Monster Duplo"
+              data-price="113.90"
+            >
+              <i class="fa-solid fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>     
+      </div>
+      <!--Fim - lista de produtos-->
+
+      <!--Inicio - lista de produtos-->
+      <div class="flex gap-2">
+        <img 
+          src="./assets/hamb-7.png" 
+          alt="Hanmburguer Dev Junior"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+        />
+        <div>
+          <p class="font-bold">Hanmburguer Dev Junior</p>
+          <p class="text-sm">Um hambúrguer clássico com um ovo frito por cima, queijo cheddar derretido e molho especial em um pão macio. Um toque de manhã no seu lanche!</p>
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 23.90</p>
+            <button 
+              class=" bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="Hanmburguer Dev Junior"
+              data-price="23.90"
+            >
+              <i class="fa-solid fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>     
+      </div>
+      <!--Fim - lista de produtos-->
+
+      <!--Inicio - lista de produtos-->
+      <div class="flex gap-2">
+        <img 
+          src="./assets/hamb-8.png" 
+          alt="Hanmburguer Dev Pleno"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+        />
+        <div>
+          <p class="font-bold">Hanmburguer Dev Pleno</p>
+          <p class="text-sm">Um hambúrguer vegetariano feito com legumes frescos, queijo derretido e molho especial em um pão macio. Uma opção saudável e saborosa!</p>
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 39.11</p>
+            <button 
+              class=" bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="Hanmburguer Dev Pleno"
+              data-price="39.11"
+            >
+              <i class="fa-solid fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>     
+      </div>
+      <!--Fim - lista de produtos-->
+
+
+    </main>
+
+    <!--Opções de Bebidas----------------------------------------------------------------------------------------------------------->
+    <div class="mx-auto max-w-7xl px-2 my-2">
+      <h2 class="font-bold text-3xl bg-slate-400">Bebidas</h2>
+    </div>
+
+    <!--Inicio Grid Bebidas-->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
+        <!--Inicio - lista de produtos-->
+        <div class="flex gap-2 w-full">
+          <img 
+            src="./assets/refri-1.png" 
+            alt="Coca-cola Lata"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+
+          <div class="w-full">
+            <p class="font-bold">Coca-cola Lata</p>
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 6.00</p>
+              <button 
+                class=" bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="Coca-cola Lata"
+                data-price="6"
+              >
+                <i class="fa-solid fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>     
+        </div>
+        <!--Fim - lista de produtos-->
+
+        <!--Inicio - lista de produtos-->
+        <div class="flex gap-2 w-full">
+          <img 
+            src="./assets/refri-2.png" 
+            alt="Guarana Lata"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+
+          <div class="w-full">
+            <p class="font-bold">Guarana Lata</p>
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 6.00</p>
+              <button 
+                class=" bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="Guarana Lata"
+                data-price="6"
+              >
+                <i class="fa-solid fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>     
+        </div>
+        <!--Fim - lista de produtos-->
+    </div>
+    <!--Fim Grid Bebidas-->
+  </div>
+  <!--Fim do Menu do Cardápio-->
+
+  <!--inicio do MODAL-->
+  <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden" id="cart-modal">
+    <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+      <h2 class="text-center font-bold text-2xl mb-2">Meu Carrinho</h2>
+      <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+      
+      <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
+      <p class="font-bold mt-4">Endereço de entrega:</p>
+      <input 
+        type="text"
+        placeholder="Digite seu endereço completo..."
+        id="address"
+        class="w-full border-2 p-1 rounded my-1"
+      />
+      <p class="text-red-500 hidden" id="address-warn">Digite seu endereço completo!</p>
+      <div class="flex items-center justify-between mt-5 w-full">
+        <button id="close-modal-btn" class="text-red-600">Fechar</button>
+        <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar Pedido</button>
+      </div>
+    </div>
+  </div>
+  <!--Fim do MODAL-->
+
+  <!--Inicio do Footer-->
+  <footer class="w-full bg-red-500 py-3 fixed bottom-0 z-40 flex items-center justify-center">
+    <button class="flex items-center gap-2 text-white font-bold" id="cart-btn">
+      (<span id="cart-count">0</span>)
+      Veja meu Carrinho
+      <i class="fa-solid fa-cart-plus text-lg text-white"></i>
+    </button>
+  </footer>
+  <!--Fim do Footer-->
+
+
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="./script.js"></script>
+</body>
+</html> 
